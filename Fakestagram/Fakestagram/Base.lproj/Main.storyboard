@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fJV-Xm-i7l">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fakestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="-13"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d7L-iq-PJ7">
+            <objects>
+                <viewController id="ohd-aK-jA8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="94c-mj-nnm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qq8-Pg-caN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="camara" selectedImage="camara" id="9t9-Zf-1QR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOi-bi-AZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152" y="473"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rgV-TG-aMI">
+            <objects>
+                <viewController id="2xO-SU-z4P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T75-VL-wdI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hxB-CQ-hbZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="inicio" selectedImage="inicio" id="Z0t-3a-53N">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-9"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p51-ze-drl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152" y="-192"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uDU-mf-bYy">
+            <objects>
+                <tabBarController id="fJV-Xm-i7l" sceneMemberID="viewController">
+                    <tabBar key="tabBar" tag="17" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="rxR-pD-L9c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2xO-SU-z4P" kind="relationship" relationship="viewControllers" id="keC-81-1si"/>
+                        <segue destination="ohd-aK-jA8" kind="relationship" relationship="viewControllers" id="M82-4b-VuU"/>
+                        <segue destination="gSe-xh-Zil" kind="relationship" relationship="viewControllers" id="fv8-l6-k3S"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGo-G2-4Bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="140"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="DeG-cv-4Eq">
+            <objects>
+                <viewController id="gSe-xh-Zil" customClass="ProfileViewController" customModule="Fakestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ebo-YF-wvN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OH2-qb-R4O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="portada" translatesAutoresizingMaskIntoConstraints="NO" id="XCi-g9-cXI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fotoperfil" translatesAutoresizingMaskIntoConstraints="NO" id="OGU-Fp-8zH">
+                                        <rect key="frame" x="115" y="130" width="144" height="142"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZPi-cP-e19">
+                                <rect key="frame" x="0.0" y="308" width="375" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XfW-zM-4W9">
+                                    <size key="itemSize" width="133" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oE9-Du-3sb">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="133" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-wU-TvE">
+                                                    <rect key="frame" x="6" y="3" width="120" height="97"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="u4d-9d-6Rd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="perfil" selectedImage="perfil" id="0am-Gi-dFL"/>
+                    <connections>
+                        <outlet property="imageView" destination="OGU-Fp-8zH" id="tIE-io-7qf"/>
+                        <outlet property="photoCollectionView" destination="ZPi-cP-e19" id="g2R-Qf-bLb"/>
+                        <outlet property="portadaImageView" destination="XCi-g9-cXI" id="j99-fT-cTo"/>
+                        <outlet property="profileContainer" destination="OH2-qb-R4O" id="0fq-Ks-IgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35P-xE-pud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197.5999999999999" y="938.68065967016503"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camara" width="22.5" height="22.5"/>
+        <image name="fotoperfil" width="352" height="480"/>
+        <image name="inicio" width="24" height="24"/>
+        <image name="perfil" width="18" height="18"/>
+        <image name="portada" width="1260" height="787.5"/>
+    </resources>
+</document>
